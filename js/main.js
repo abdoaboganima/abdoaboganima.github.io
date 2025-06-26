@@ -125,8 +125,15 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   };
 
+  // --- Footer Logic ---
+  const setFooterYear = () => {
+    const yearSpan = document.getElementById('current-year');
+    if (yearSpan) yearSpan.textContent = new Date().getFullYear();
+  }
+
   // Initialize all features
   setupThemeToggler();
   loadCourses();
   setupScrollAnimations();
+  setFooterYear();
 });

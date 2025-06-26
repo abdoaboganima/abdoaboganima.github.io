@@ -8,6 +8,7 @@
   --dark-gray: #343a40; /* Used for h1, h2, h3, h5 */
   --bs-body-color: #212529; /* Main body text color */
   --card-bg: #ffffff;
+  --footer-text-color: #6c757d; /* Muted text for light mode */
   --card-border: #dee2e6;
   --shadow-color: rgba(0, 0, 0, 0.075);
 }
@@ -20,6 +21,7 @@ body[data-theme="dark"] {
   --card-border: #343a40;
   --shadow-color: rgba(0, 0, 0, 0.2);
   --bs-link-color: #69b1ff;
+  --footer-text-color: #adb5bd; /* Muted text for dark mode */
   --bs-link-hover-color: #8bc2ff;
   --bs-secondary: #495057;
 }
@@ -128,4 +130,10 @@ ul {
 #theme-toggle-container .form-check-label {
   margin-left: 0.5rem; /* Space between switch and icon */
   color: var(--bs-body-color); /* Icon color matches body text */
+}
+
+footer {
+  border-top: 1px solid var(--card-border);
+  color: var(--footer-text-color);
+  transition: border-color 0.3s ease, color 0.3s ease;
 }
