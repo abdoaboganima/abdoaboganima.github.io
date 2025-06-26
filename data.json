@@ -1,0 +1,136 @@
+{
+  "courses": [
+    { "title": "Jenkins, kodekloud" },
+    { "title": "Docker Training Course" },
+    { "title": "Open Source for Beginners" },
+    { "title": "Learn Ansible Basics" },
+    { "title": "ISTQB CTFL V4: International Software Testing Qualifications Board Certified Tester" },
+    { "title": "Overview of Automotive SPICE" },
+    { "title": "Introduction to DevOps" },
+    { "title": "Introduction to Test and Behavior Driven Development" },
+    {
+      "title": "Introduction to Programming in C Specialization",
+      "details": [
+        "Programming Fundamentals",
+        "Writing, Running, and Fixing Code in C",
+        "Pointers, Arrays, and Recursion",
+        "Interacting with the System and Managing Memory"
+      ]
+    },
+    {
+      "title": "Computational Thinking with Beginning C Programming Specialization",
+      "details": [
+        "Algorithms, Data Collection, and Starting to Code",
+        "Abstraction, Problem Decomposition, and Functions",
+        "Data Analysis and Representation, Selection and Iteration",
+        "Simulation, Algorithm Analysis, and Pointers"
+      ]
+    },
+    {
+      "title": "C Programming with Linux Professional Certificate",
+      "details": [
+        "C Programming: Getting Started",
+        "C Programming: Language Foundations",
+        "C Programming: Modular Programming and Memory Management",
+        "C Programming: Pointers and Memory Management",
+        "C Programming: Advanced Data Types",
+        "Linux Basics: The Command Line Interface",
+        "C Programming: Using Linux Tools and Libraries"
+      ]
+    },
+    {
+      "title": "Embedded Systems - Shape The World",
+      "details": [
+        "Embedded Systems - Shape The World: Microcontroller Input/Output",
+        "Embedded Systems - Shape The World: Multi-Threaded Interfacing"
+      ]
+    },
+    {
+      "title": "Python 3 Programming Specialization",
+      "details": [
+        "Python Basics",
+        "Python Functions, Files, and Dictionaries",
+        "Data Collection and Processing with Python",
+        "Python Classes and Inheritance",
+        "Python Project: pillow, tesseract, and opencv"
+      ]
+    },
+    {
+      "title": "Python for Everybody Specialization",
+      "details": [
+        "Programming for Everybody (Getting Started with Python)",
+        "Python Data Structures"
+      ]
+    },
+    {
+      "title": "IBM Data Science Professional Certificate",
+      "details": [
+        "What is Data Science?",
+        "Open Source tools for Data Science"
+      ]
+    },
+    {
+      "title": "Accelerated Computer Science Fundamentals Specialization",
+      "details": [
+        "Object-Oriented Data Structures in C++."
+      ]
+    },
+    {
+      "title": "Web Application Technologies and Django",
+      "details": [
+        "Web Application Technologies and Django"
+      ]
+    },
+    {
+      "title": "Web Applications for Everybody Specialization",
+      "details": [
+        "Introduction to Structured Query Language (SQL)"
+      ]
+    },
+    {
+      "title": "Web Design for Everybody: Basics of Web Development & Coding Specialization",
+      "details": [
+        "Introduction to HTML5"
+      ]
+    },
+    {
+      "title": "Google IT Automation with Python Professional Certificate",
+      "details": [
+        "Crash Course on Python",
+        "Introduction to Git and GitHub"
+      ]
+    },
+    {
+      "title": "Google IT Support Professional Certificate",
+      "details": [
+        "Technical Support Fundamentals",
+        "The Bits and Bytes of Computer Networking",
+        "Operating Systems and You: Becoming a Power User"
+      ]
+    },
+    {
+      "title": "Mathematics for Machine Learning",
+      "details": [
+        "Mathematics for Machine Learning: Linear Algebra"
+      ]
+    },
+    { "title": "Introduction to Embedded Systems Software and Development Environments" },
+    { "title": "Build a Modern Computer from First Principles: From Nand to Tetris (Project-Centered Course)" },
+    {
+      "title": "Improve Your English Communication Skills Specialization",
+      "details": [
+        "Speak English Professionally: In Person, Online & On the Phone"
+      ]
+    },
+    { "title": "C for Everyone: Structured Programming" },
+    { "title": "Version Control with Git" },
+    { "title": "Introduction to Programming with MATLAB" },
+    { "title": "The Unix Workbench" },
+    { "title": "Differential Equations for Engineers" },
+    { "title": "Linear Circuits 1: DC Analysis" },
+    { "title": "Linear Circuits 2: AC Analysis" },
+    { "title": "Introduction to Ordinary Differential Equations" },
+    { "title": "English for Career Development" },
+    { "title": "English for Science, Technology, Engineering, and Mathematics" }
+  ]
+}
