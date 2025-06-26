@@ -3,13 +3,15 @@ document.addEventListener('DOMContentLoaded', () => {
   // --- Theme Toggler Logic ---
   const setupThemeToggler = () => {
     const themeToggle = document.getElementById('theme-toggle');
-    if (!themeToggle) return;
+    const themeToggleSwitch = document.getElementById('theme-toggle-switch'); // Target the new switch
+    if (!themeToggleSwitch) return; // Ensure the switch exists
     const body = document.body;
-    const themeIcon = themeToggle.querySelector('i');
+    const themeIcon = themeToggleSwitch.nextElementSibling.querySelector('i'); // Get the icon from the label
 
     const applyTheme = (theme) => {
       body.dataset.theme = theme;
       localStorage.setItem('theme', theme);
+      themeToggleSwitch.checked = (theme === 'dark'); // Set the switch's state
       if (theme === 'dark') {
         themeIcon.classList.remove('fa-moon');
         themeIcon.classList.add('fa-sun');
@@ -19,8 +21,8 @@ document.addEventListener('DOMContentLoaded', () => {
       }
     };
 
-    themeToggle.addEventListener('click', () => {
-      const newTheme = body.dataset.theme === 'dark' ? 'light' : 'dark';
+    themeToggleSwitch.addEventListener('change', () => { // Listen for 'change' event on the switch
+      const newTheme = themeToggleSwitch.checked ? 'dark' : 'light';
       applyTheme(newTheme);
     });
 

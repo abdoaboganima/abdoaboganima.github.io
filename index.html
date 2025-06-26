@@ -125,19 +125,23 @@
     }
 
     #theme-toggle {
-      position: absolute;
+      /* Removed as it's now a switch */
+    }
+
+    #theme-toggle-container {
+      position: absolute; /* Position the switch container */
       top: 2.5rem;
       right: 1.5rem;
       z-index: 10;
       border-radius: 50%;
-      width: 40px;
-      height: 40px;
       display: flex;
       align-items: center;
       justify-content: center;
-      border-color: var(--card-border);
-      color: var(--text-color);
-      background-color: var(--card-bg);
+    }
+
+    #theme-toggle-container .form-check-label {
+      margin-left: 0.5rem; /* Space between switch and icon */
+      color: var(--bs-body-color); /* Icon color matches body text */
     }
   </style>
 </head>
@@ -145,7 +149,12 @@
 <body>
   <div class="container position-relative">
     <header class="mb-4">
-      <button id="theme-toggle" class="btn" title="Toggle theme"><i class="fas fa-moon"></i></button>
+      <div class="form-check form-switch" id="theme-toggle-container">
+        <input class="form-check-input" type="checkbox" id="theme-toggle-switch">
+        <label class="form-check-label" for="theme-toggle-switch" title="Toggle theme">
+          <i class="fas fa-moon"></i>
+        </label>
+      </div>
       <h1 class="text-center">Abdelrahman Aboghanima</h1>
       <div class="text-center">
         <p><i class="fas fa-fw fa-phone icon" aria-hidden="true"></i><a href="tel:+201556757667">(+20) 1556757667</a> | <i class="fas fa-fw fa-envelope icon" aria-hidden="true"></i><a href="mailto:abdo.aboganima@gmail.com">abdo.aboganima@gmail.com</a></p>
