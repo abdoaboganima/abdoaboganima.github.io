@@ -17,15 +17,33 @@ document.addEventListener('DOMContentLoaded', async () => {
   const renderCourses = (courses) => {
     const coursesList = document.createElement('ul');
     courses.forEach(course => {
-      const listItem = document.createElement('li');
-      listItem.textContent = course.title;
+      const listItem = document.createElement('li'); // Create the <li> for the main course
+      const courseTextElement = course.url
+        ? document.createElement('a')
+        : document.createElement('span'); // Use <a> if URL exists, else <span>
+      courseTextElement.textContent = course.title;
+      if (course.url) {
+        courseTextElement.href = course.url;
+        courseTextElement.target = '_blank'; // Open link in new tab
+        courseTextElement.rel = 'noopener noreferrer'; // Security best practice
+      }
+      listItem.appendChild(courseTextElement);
 
       if (course.details && course.details.length > 0) {
         const nestedList = document.createElement('ul');
         nestedList.className = 'nested-list';
         course.details.forEach(detail => {
           const nestedItem = document.createElement('li');
-          nestedItem.textContent = detail;
+            const detailTextElement = detail.url
+              ? document.createElement('a')
+              : document.createElement('span'); // Use <a> if URL exists, else <span>
+            detailTextElement.textContent = detail.title; // Access title property
+            if (detail.url) {
+              detailTextElement.href = detail.url;
+              detailTextElement.target = '_blank';
+              detailTextElement.rel = 'noopener noreferrer';
+            }
+            nestedItem.appendChild(detailTextElement);
           nestedList.appendChild(nestedItem);
         });
         listItem.appendChild(nestedList);

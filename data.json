@@ -1,136 +1,139 @@
 {
   "courses": [
-    { "title": "Jenkins, kodekloud" },
-    { "title": "Docker Training Course" },
-    { "title": "Open Source for Beginners" },
-    { "title": "Learn Ansible Basics" },
-    { "title": "ISTQB CTFL V4: International Software Testing Qualifications Board Certified Tester" },
-    { "title": "Overview of Automotive SPICE" },
-    { "title": "Introduction to DevOps" },
-    { "title": "Introduction to Test and Behavior Driven Development" },
+    { "title": "Jenkins, kodekloud", "url": "https://learn.kodekloud.com/user/certificate/1f1f8056-e641-42f6-addd-ccc19f7ba121" },
+    { "title": "Docker Training Course", "url": "https://learn.kodekloud.com/user/certificate/fc167457-5d06-465e-96c0-24e3f4736e13" },
+    { "title": "Open Source for Beginners", "url": "https://learn.kodekloud.com/user/certificate/06177ab3-6462-49cf-9aa6-a67fbc751c5a" },
+    { "title": "Learn Ansible Basics", "url": "https://learn.kodekloud.com/user/certificate/c7fdfd5c-210c-4128-850c-bb470980c93e" },
+    { "title": "ISTQB CTFL V4: International Software Testing Qualifications Board Certified Tester", "url": "http://scr.istqb.org/?name=&number=231101018" },
+    { "title": "Overview of Automotive SPICE", "url": "https://www.coursera.org/account/accomplishments/certificate/0EC4A5ORNEKK" },
+    { "title": "Introduction to DevOps", "url": "https://www.coursera.org/account/accomplishments/certificate/W9A79QAQWTAU" },
+    { "title": "Introduction to Test and Behavior Driven Development", "url": "https://www.coursera.org/account/accomplishments/certificate/DXM25A5N4KWY" },
     {
       "title": "Introduction to Programming in C Specialization",
+      "url": "https://www.coursera.org/account/accomplishments/specialization/certificate/5AHGQBBNXTD7",
       "details": [
-        "Programming Fundamentals",
-        "Writing, Running, and Fixing Code in C",
-        "Pointers, Arrays, and Recursion",
-        "Interacting with the System and Managing Memory"
+        { "title": "Programming Fundamentals", "url": "https://www.coursera.org/account/accomplishments/certificate/HWTD2YPJW637" },
+        { "title": "Writing, Running, and Fixing Code in C", "url": "https://www.coursera.org/account/accomplishments/certificate/2UAEMU4C3DBJ" },
+        { "title": "Pointers, Arrays, and Recursion", "url": "https://www.coursera.org/account/accomplishments/certificate/JUGUD6K85HJT" },
+        { "title": "Interacting with the System and Managing Memory", "url": "https://www.coursera.org/account/accomplishments/certificate/8QQJ38DNP69Y" }
       ]
     },
     {
       "title": "Computational Thinking with Beginning C Programming Specialization",
+      "url": "https://www.coursera.org/account/accomplishments/specialization/certificate/74BCCAZCV8KG",
       "details": [
-        "Algorithms, Data Collection, and Starting to Code",
-        "Abstraction, Problem Decomposition, and Functions",
-        "Data Analysis and Representation, Selection and Iteration",
-        "Simulation, Algorithm Analysis, and Pointers"
+        { "title": "Algorithms, Data Collection, and Starting to Code", "url": "https://www.coursera.org/account/accomplishments/certificate/Z4XS4EBWKSRQ" },
+        { "title": "Abstraction, Problem Decomposition, and Functions", "url": "https://www.coursera.org/account/accomplishments/certificate/6CWTHEPKL64Z" },
+        { "title": "Data Analysis and Representation, Selection and Iteration", "url": "https://www.coursera.org/account/accomplishments/certificate/S3GKQZLBLMLY" },
+        { "title": "Simulation, Algorithm Analysis, and Pointers", "url": "https://www.coursera.org/account/accomplishments/certificate/AZKP4XFGJMWY" }
       ]
     },
     {
       "title": "C Programming with Linux Professional Certificate",
+      "url": "https://credentials.edx.org/credentials/ff9938cc64cf4585be51389464e68438/",
       "details": [
-        "C Programming: Getting Started",
-        "C Programming: Language Foundations",
-        "C Programming: Modular Programming and Memory Management",
-        "C Programming: Pointers and Memory Management",
-        "C Programming: Advanced Data Types",
-        "Linux Basics: The Command Line Interface",
-        "C Programming: Using Linux Tools and Libraries"
+        { "title": "C Programming: Getting Started", "url": "https://courses.edx.org/certificates/11e1f6d4a3604c1aa6d21e5d608ad8a3" },
+        { "title": "C Programming: Language Foundations", "url": "https://courses.edx.org/certificates/94cb8401298441a2b0c56f368576150d" },
+        { "title": "C Programming: Modular Programming and Memory Management", "url": "https://courses.edx.org/certificates/13bc8daec86f450c8d12332ffbdce5cf" },
+        { "title": "C Programming: Pointers and Memory Management", "url": "https://courses.edx.org/certificates/4e6f82129ee74a5ca3c44254bb0872eb" },
+        { "title": "C Programming: Advanced Data Types", "url": "https://courses.edx.org/certificates/daeffdcf7a0f4d8cbb06f5d3e5a24f4c" },
+        { "title": "Linux Basics: The Command Line Interface", "url": "https://courses.edx.org/certificates/abb579e16f824a6e9d1b20b444b75cc5" },
+        { "title": "C Programming: Using Linux Tools and Libraries", "url": "https://courses.edx.org/certificates/1fcc8d5e407144e0837cf33cd52deba5" }
       ]
     },
     {
       "title": "Embedded Systems - Shape The World",
       "details": [
-        "Embedded Systems - Shape The World: Microcontroller Input/Output",
-        "Embedded Systems - Shape The World: Multi-Threaded Interfacing"
+        { "title": "Embedded Systems - Shape The World: Microcontroller Input/Output", "url": "https://courses.edx.org/certificates/c0f1d7fdc6dc4f558e218a6d6005455e" },
+        { "title": "Embedded Systems - Shape The World: Multi-Threaded Interfacing", "url": "https://courses.edx.org/certificates/2f6267c26fbc42dabf5c05f949be1936" }
       ]
     },
     {
       "title": "Python 3 Programming Specialization",
       "details": [
-        "Python Basics",
-        "Python Functions, Files, and Dictionaries",
-        "Data Collection and Processing with Python",
-        "Python Classes and Inheritance",
-        "Python Project: pillow, tesseract, and opencv"
+        { "title": "Python Basics", "url": "https://www.coursera.org/account/accomplishments/certificate/RZLFX8433KD9" },
+        { "title": "Python Functions, Files, and Dictionaries", "url": "https://www.coursera.org/account/accomplishments/certificate/6CG5CLKU3NJZ" },
+        { "title": "Data Collection and Processing with Python", "url": "https://www.coursera.org/account/accomplishments/certificate/UDLFUKJUCHXP" },
+        { "title": "Python Classes and Inheritance", "url": "https://www.coursera.org/account/accomplishments/certificate/434LVQJWD3Y2" },
+        { "title": "Python Project: pillow, tesseract, and opencv" }
       ]
     },
     {
       "title": "Python for Everybody Specialization",
       "details": [
-        "Programming for Everybody (Getting Started with Python)",
-        "Python Data Structures"
+        { "title": "Programming for Everybody (Getting Started with Python)", "url": "https://www.coursera.org/account/accomplishments/certificate/ZUJGSZG72JUR" },
+        { "title": "Python Data Structures", "url": "https://www.coursera.org/account/accomplishments/certificate/BH2H3846E76E" }
       ]
     },
     {
       "title": "IBM Data Science Professional Certificate",
       "details": [
-        "What is Data Science?",
-        "Open Source tools for Data Science"
+        { "title": "What is Data Science?", "url": "https://www.coursera.org/account/accomplishments/certificate/2YT9RY5Y5HTV" },
+        { "title": "Open Source tools for Data Science", "url": "https://www.coursera.org/account/accomplishments/certificate/GGYBW7TL2CWK" }
       ]
     },
     {
       "title": "Accelerated Computer Science Fundamentals Specialization",
       "details": [
-        "Object-Oriented Data Structures in C++."
+        { "title": "Object-Oriented Data Structures in C++.", "url": "https://www.coursera.org/account/accomplishments/certificate/QSKZN4Q222XR" }
       ]
     },
     {
       "title": "Web Application Technologies and Django",
       "details": [
-        "Web Application Technologies and Django"
+        { "title": "Web Application Technologies and Django", "url": "https://www.coursera.org/account/accomplishments/certificate/6GQ9UBQX2R4D" }
       ]
     },
     {
       "title": "Web Applications for Everybody Specialization",
       "details": [
-        "Introduction to Structured Query Language (SQL)"
+        { "title": "Introduction to Structured Query Language (SQL)", "url": "https://www.coursera.org/account/accomplishments/certificate/AZJ9579JQP8U" }
       ]
     },
     {
       "title": "Web Design for Everybody: Basics of Web Development & Coding Specialization",
       "details": [
-        "Introduction to HTML5"
+        { "title": "Introduction to HTML5", "url": "https://www.coursera.org/account/accomplishments/certificate/PJR3DHNSPGTX" }
       ]
     },
     {
       "title": "Google IT Automation with Python Professional Certificate",
       "details": [
-        "Crash Course on Python",
-        "Introduction to Git and GitHub"
+        { "title": "Crash Course on Python", "url": "https://www.coursera.org/account/accomplishments/certificate/AMTJHG457YPM" },
+        { "title": "Introduction to Git and GitHub", "url": "https://www.coursera.org/account/accomplishments/certificate/DQARRN9Q7T7B" }
       ]
     },
     {
       "title": "Google IT Support Professional Certificate",
       "details": [
-        "Technical Support Fundamentals",
-        "The Bits and Bytes of Computer Networking",
-        "Operating Systems and You: Becoming a Power User"
+        { "title": "Technical Support Fundamentals", "url": "https://www.coursera.org/account/accomplishments/certificate/UXDWFGX3EWVQ" },
+        { "title": "The Bits and Bytes of Computer Networking", "url": "https://www.coursera.org/account/accomplishments/certificate/JVY45V22UX4L" },
+        { "title": "Operating Systems and You: Becoming a Power User", "url": "https://www.coursera.org/account/accomplishments/certificate/U6524PVEUDVG" }
       ]
     },
     {
       "title": "Mathematics for Machine Learning",
       "details": [
-        "Mathematics for Machine Learning: Linear Algebra"
+        { "title": "Mathematics for Machine Learning: Linear Algebra", "url": "https://www.coursera.org/account/accomplishments/certificate/SZY2Q7RUL2GD" }
       ]
     },
-    { "title": "Introduction to Embedded Systems Software and Development Environments" },
-    { "title": "Build a Modern Computer from First Principles: From Nand to Tetris (Project-Centered Course)" },
+    { "title": "Introduction to Embedded Systems Software and Development Environments", "url": "https://www.coursera.org/account/accomplishments/certificate/CTKK2B3KJ8XK" },
+    { "title": "Build a Modern Computer from First Principles: From Nand to Tetris (Project-Centered Course)", "url": "https://www.coursera.org/account/accomplishments/certificate/VXPDEJGU6VYR" },
     {
       "title": "Improve Your English Communication Skills Specialization",
       "details": [
-        "Speak English Professionally: In Person, Online & On the Phone"
+        { "title": "Speak English Professionally: In Person, Online & On the Phone", "url": "https://www.coursera.org/account/accomplishments/certificate/JKH8HGUZRQKM" }
       ]
     },
-    { "title": "C for Everyone: Structured Programming" },
-    { "title": "Version Control with Git" },
-    { "title": "Introduction to Programming with MATLAB" },
-    { "title": "The Unix Workbench" },
-    { "title": "Differential Equations for Engineers" },
-    { "title": "Linear Circuits 1: DC Analysis" },
-    { "title": "Linear Circuits 2: AC Analysis" },
-    { "title": "Introduction to Ordinary Differential Equations" },
-    { "title": "English for Career Development" },
-    { "title": "English for Science, Technology, Engineering, and Mathematics" }
+    { "title": "C for Everyone: Structured Programming", "url": "https://www.coursera.org/account/accomplishments/certificate/RF3QUUSNZZ2L" },
+    { "title": "Version Control with Git", "url": "https://www.coursera.org/account/accomplishments/certificate/EEZ9KUAC2SMG" },
+    { "title": "Introduction to Programming with MATLAB", "url": "https://www.coursera.org/account/accomplishments/certificate/L3CK4FKGVPB3" },
+    { "title": "The Unix Workbench", "url": "https://www.coursera.org/account/accomplishments/certificate/EDYYGB43EHJZ" },
+    { "title": "Differential Equations for Engineers", "url": "https://www.coursera.org/account/accomplishments/certificate/373NLPY3H32L" },
+    { "title": "Linear Circuits 1: DC Analysis", "url": "https://www.coursera.org/account/accomplishments/certificate/QL8959H3TE5V" },
+    { "title": "Linear Circuits 2: AC Analysis", "url": "https://www.coursera.org/account/accomplishments/certificate/DD3MC5QXK8JM" },
+    { "title": "Introduction to Ordinary Differential Equations", "url": "https://www.coursera.org/account/accomplishments/certificate/RCRHJ2RU49K9" },
+    { "title": "English for Career Development", "url": "https://www.coursera.org/account/accomplishments/certificate/LJGJGHWV9NEW" },
+    { "title": "English for Science, Technology, Engineering, and Mathematics", "url": "https://www.coursera.org/account/accomplishments/certificate/J97SGG3GM6Q8" }
   ]
 }
