@@ -8,74 +8,120 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
   <link rel="icon" type="image/x-icon" href="processor.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
   <style>
+    :root {
+      --bs-primary: #007bff;
+      --bs-primary-rgb: 0, 123, 255;
+      --bs-secondary: #6c757d;
+      --bs-link-color: var(--bs-primary);
+      --bs-link-hover-color: #0056b3;
+      --light-gray: #f8f9fa;
+      --dark-gray: #343a40;
+      --text-color: #212529;
+      --card-bg: #ffffff;
+      --card-border: #dee2e6;
+      --shadow-color: rgba(0, 0, 0, 0.075);
+    }
+
     body {
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      background-color: #f4f6f9;
-      color: #343a40;
+      font-family: 'Inter', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: var(--light-gray);
+      color: var(--text-color);
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
     }
-    h1, h2, h3 {
-      color: #2c3e50;
+
+    h1, h2, h3, h5 {
+      color: var(--dark-gray);
+      font-weight: 500;
     }
+
+    h1 {
+      font-weight: 700;
+    }
+
     .container {
       max-width: 960px;
       margin: auto;
       padding: 40px 15px;
     }
+
     a {
-      color: #0d6efd;
       text-decoration: none;
+      transition: color 0.2s ease-in-out;
     }
     a:hover {
       text-decoration: underline;
     }
-    .section {
-      margin-bottom: 50px;
+
+    header {
+      border-bottom: 1px solid var(--card-border);
+      padding-bottom: 1.5rem;
     }
+
+    .section {
+      margin-bottom: 2.5rem;
+    }
+
     ul {
       padding-left: 1.25rem;
+      margin-bottom: 0;
     }
+
     .card {
-      border: none;
-      background: #ffffff;
-      box-shadow: 0 0 10px rgba(0,0,0,0.05);
-      padding: 20px;
-      border-radius: 8px;
-      margin-bottom: 20px;
+      border: 1px solid var(--card-border);
+      background: var(--card-bg);
+      box-shadow: 0 0.125rem 0.25rem var(--shadow-color);
+      padding: 25px;
+      border-radius: 0.5rem;
+      margin-bottom: 0;
     }
+
     .row-cols-1.row-cols-md-2 > div {
       margin-bottom: 1rem;
     }
+
     .nested-list {
       list-style-type: circle;
       margin-left: 1.5rem;
+      margin-top: 0.5rem;
     }
+
     .icon {
-      margin-right: 8px;
-      color: #0d6efd;
+      margin-right: 10px;
+      color: var(--bs-primary);
+    }
+
+    .badge {
+      font-weight: 500;
+      font-size: 0.8rem;
+      padding: 0.4em 0.7em;
     }
   </style>
 </head>
 
 <body>
   <div class="container">
-    <header class="mb-5">
+    <header class="mb-4">
       <h1 class="text-center">Abdelrahman Aboghanima</h1>
       <div class="text-center">
-        <p><i class="fas fa-phone icon" aria-hidden="true"></i><a href="tel:+201556757667">(+20) 1556757667</a> | <i class="fas fa-envelope icon" aria-hidden="true"></i><a href="mailto:abdo.aboganima@gmail.com">abdo.aboganima@gmail.com</a></p>
-        <p><i class="fas fa-map-marker-alt icon" aria-hidden="true"></i>Giza, Egypt</p>
+        <p><i class="fas fa-fw fa-phone icon" aria-hidden="true"></i><a href="tel:+201556757667">(+20) 1556757667</a> | <i class="fas fa-fw fa-envelope icon" aria-hidden="true"></i><a href="mailto:abdo.aboganima@gmail.com">abdo.aboganima@gmail.com</a></p>
+        <p><i class="fas fa-fw fa-map-marker-alt icon" aria-hidden="true"></i>Giza, Egypt</p>
       </div>
     </header>
 
     <section class="section">
-      <h2><i class="fas fa-user icon" aria-hidden="true"></i>Summary</h2>
+      <h2><i class="fas fa-fw fa-user icon" aria-hidden="true"></i>Summary</h2>
       <div class="card">
         <p class="mb-0">Computers and Systems Engineer. Special interest in Embedded Systems Software Development. Skilled in Python, C++, and C. Ranked second in university class with overall distinction grade.</p>
       </div>
     </section>
 
     <section class="section">
-      <h2><i class="fas fa-briefcase icon" aria-hidden="true"></i>Current Position</h2>
+      <h2><i class="fas fa-fw fa-briefcase icon" aria-hidden="true"></i>Current Position</h2>
       <div class="card">
         <h5>Embedded Software Engineer <span class="text-muted">(Nov 2022 – Present)</span></h5>
         <p>Valeo Egypt, Cairo, Egypt</p>
@@ -93,7 +139,7 @@
     </section>
 
     <section class="section">
-      <h2><i class="fas fa-graduation-cap icon" aria-hidden="true"></i>Education</h2>
+      <h2><i class="fas fa-fw fa-graduation-cap icon" aria-hidden="true"></i>Education</h2>
       <div class="card">
         <h5>B.S. in Computers and Systems Engineering</h5>
         <p>Minya University <span class="text-muted">(Sep 2017 – Jul 2022)</span></p>
@@ -102,7 +148,7 @@
     </section>
 
     <section class="section">
-      <h2><i class="fas fa-chalkboard-teacher icon" aria-hidden="true"></i>Training</h2>
+      <h2><i class="fas fa-fw fa-chalkboard-teacher icon" aria-hidden="true"></i>Training</h2>
       <div class="card">
         <ul>
           <li>RTOS and Automotive Technology, 2022, National Telecommunication Institute (NTI)</li>
@@ -112,7 +158,7 @@
     </section>
 
     <section class="section">
-      <h2><i class="fas fa-cogs icon" aria-hidden="true"></i>Technical Skills</h2>
+      <h2><i class="fas fa-fw fa-cogs icon" aria-hidden="true"></i>Technical Skills</h2>
       <div class="card">
         <div class="row">
           <div class="col-md-6 mb-3">
@@ -204,10 +250,10 @@
     </section>
 
     <section class="section">
-      <h2><i class="fas fa-tools icon" aria-hidden="true"></i>Projects</h2>
+      <h2><i class="fas fa-fw fa-tools icon" aria-hidden="true"></i>Projects</h2>
       <div class="card">
         <ul>
-          <li><strong>Drivers' Implementation for MCAL/HAL:</strong> <a href="https://github.com/abdoaboganima/avr">GitHub Link</a></li>
+          <li><strong>Drivers' Implementation for MCAL/HAL:</strong> <a href="https://github.com/abdoaboganima/avr" target="_blank" rel="noopener noreferrer">GitHub Link <i class="fas fa-external-link-alt fa-xs ms-1 text-muted"></i></a></li>
           <li><strong>Line Follower Robot:</strong> Based on ATmega32, IR sensors, L293 driver</li>
           <li><strong>Python Project:</strong> pillow, tesseract, and opencv</li>
         </ul>
@@ -215,18 +261,18 @@
     </section>
 
     <section class="section">
-      <h2><i class="fas fa-globe icon" aria-hidden="true"></i>Online Projects</h2>
+      <h2><i class="fas fa-fw fa-globe icon" aria-hidden="true"></i>Online Projects</h2>
       <div class="card">
         <ul>
-          <li><a href="https://www.coursera.org/account/accomplishments/certificate/FYVL8XCT3CX6">Create User Directory and Files with Linux Commands</a></li>
-          <li><a href="https://www.coursera.org/account/accomplishments/certificate/8XHC4FBEPKKU">Introduction to Pointers and Memory Management in C/C++</a></li>
-          <li><a href="https://www.coursera.org/account/accomplishments/certificate/27ACEUCSDNKH">Getting Started with Cascading Style Sheet</a></li>
+          <li><a href="https://www.coursera.org/account/accomplishments/certificate/FYVL8XCT3CX6" target="_blank" rel="noopener noreferrer">Create User Directory and Files with Linux Commands <i class="fas fa-external-link-alt fa-xs ms-1 text-muted"></i></a></li>
+          <li><a href="https://www.coursera.org/account/accomplishments/certificate/8XHC4FBEPKKU" target="_blank" rel="noopener noreferrer">Introduction to Pointers and Memory Management in C/C++ <i class="fas fa-external-link-alt fa-xs ms-1 text-muted"></i></a></li>
+          <li><a href="https://www.coursera.org/account/accomplishments/certificate/27ACEUCSDNKH" target="_blank" rel="noopener noreferrer">Getting Started with Cascading Style Sheet <i class="fas fa-external-link-alt fa-xs ms-1 text-muted"></i></a></li>
         </ul>
       </div>
     </section>
 
     <section class="section">
-      <h2><i class="fas fa-globe fa-star icon" aria-hidden="true"></i>Courses & Certifications</h2>
+      <h2><i class="fas fa-fw fa-star icon" aria-hidden="true"></i>Courses & Certifications</h2>
       <div class="card">
         <div id="courses-container">
           <!-- Course content will be loaded here by js/main.js -->
@@ -235,7 +281,7 @@
     </section>
 
     <section class="section">
-      <h2><i class="fas fa-language icon" aria-hidden="true"></i>Languages</h2>
+      <h2><i class="fas fa-fw fa-language icon" aria-hidden="true"></i>Languages</h2>
       <div class="card">
         <ul>
           <li>Arabic – Native</li>
@@ -246,7 +292,7 @@
     </section>
 
     <section class="section">
-      <h2><i class="fas fa-user-check icon" aria-hidden="true"></i>Personal Skills</h2>
+      <h2><i class="fas fa-fw fa-user-check icon" aria-hidden="true"></i>Personal Skills</h2>
       <div class="card">
         <ul>
           <li>Self-discipline</li>
@@ -259,7 +305,7 @@
     </section>
 
     <section class="section">
-      <h2><i class="fas fa-id-card icon" aria-hidden="true"></i>Personal Data</h2>
+      <h2><i class="fas fa-fw fa-id-card icon" aria-hidden="true"></i>Personal Data</h2>
       <div class="card">
         <ul>
           <li>Date of Birth: 25/10/1999</li>
@@ -269,10 +315,10 @@
     </section>
 
     <section class="section">
-      <h2><i class="fas fa-link icon" aria-hidden="true"></i>Links</h2>
+      <h2><i class="fas fa-fw fa-link icon" aria-hidden="true"></i>Links</h2>
       <div class="card">
         <ul>
-          <li><a href="https://www.linkedin.com/in/abdoaboganima">LinkedIn Profile</a></li>
+          <li><a href="https://www.linkedin.com/in/abdoaboganima" target="_blank" rel="noopener noreferrer">LinkedIn Profile <i class="fas fa-external-link-alt fa-xs ms-1 text-muted"></i></a></li>
         </ul>
       </div>
     </section>

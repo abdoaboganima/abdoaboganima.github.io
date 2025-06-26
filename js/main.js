@@ -26,6 +26,10 @@ document.addEventListener('DOMContentLoaded', async () => {
         courseTextElement.href = course.url;
         courseTextElement.target = '_blank'; // Open link in new tab
         courseTextElement.rel = 'noopener noreferrer'; // Security best practice
+
+        const icon = document.createElement('i');
+        icon.className = 'fas fa-external-link-alt fa-xs ms-1 text-muted';
+        courseTextElement.appendChild(icon);
       }
       listItem.appendChild(courseTextElement);
 
@@ -42,6 +46,10 @@ document.addEventListener('DOMContentLoaded', async () => {
               detailTextElement.href = detail.url;
               detailTextElement.target = '_blank';
               detailTextElement.rel = 'noopener noreferrer';
+
+              const icon = document.createElement('i');
+              icon.className = 'fas fa-external-link-alt fa-xs ms-1 text-muted';
+              detailTextElement.appendChild(icon);
             }
             nestedItem.appendChild(detailTextElement);
           nestedList.appendChild(nestedItem);
