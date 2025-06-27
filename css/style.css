@@ -7,6 +7,7 @@
   --light-gray: #f8f9fa;
   --dark-gray: #343a40; /* Used for h1, h2, h3, h5 */
   --bs-body-color: #212529; /* Main body text color */
+  --bs-body-color: #212529
   --card-bg: #ffffff;
   --footer-text-color: #6c757d; /* Muted text for light mode */
   --card-border: #dee2e6;
@@ -18,6 +19,7 @@ body[data-theme="dark"] {
   --dark-gray: #e9ecef;
   --bs-body-color: #ced4da; /* Dark mode main body text color */
   --card-bg: #1e1e1e;
+  --bs-secondary-color: #adb5bd; 
   --card-border: #343a40;
   --shadow-color: rgba(0, 0, 0, 0.2);
   --bs-link-color: #69b1ff;
