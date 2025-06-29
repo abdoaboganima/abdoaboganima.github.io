@@ -35,55 +35,79 @@ document.addEventListener('DOMContentLoaded', () => {
   // --- Courses Loading Logic ---
   const loadCourses = async () => {
     const coursesContainer = document.getElementById('courses-container');
-    if (!coursesContainer) return;
+    const coursesToggleContainer = document.getElementById('courses-toggle-container');
+    if (!coursesContainer || !coursesToggleContainer) return;
+
+    const INITIAL_ITEMS_VISIBLE = 10;
 
     const showLoading = () => {
       coursesContainer.innerHTML = `<div class="text-center"><div class="spinner-border" role="status"><span class="visually-hidden">Loading...</span></div></div>`;
+      coursesToggleContainer.innerHTML = ''; // Clear toggle button while loading
     };
 
     const showError = () => {
       coursesContainer.innerHTML = '<p class="text-danger text-center">Failed to load courses data.</p>';
     };
 
+    // Helper function to create a course link/text element (DRY principle)
+    const createCourseElement = (item) => {
+      const element = item.url ? document.createElement('a') : document.createElement('span');
+      element.textContent = item.title;
+      if (item.url) {
+        element.href = item.url;
+        element.target = '_blank';
+        element.rel = 'noopener noreferrer';
+        const icon = document.createElement('i');
+        icon.className = 'fas fa-external-link-alt fa-xs ms-1 text-muted';
+        element.appendChild(icon);
+      }
+      return element;
+    };
+
     const renderCourses = (courses) => {
       const coursesList = document.createElement('ul');
-      courses.forEach(course => {
+      courses.forEach((course, index) => {
         const listItem = document.createElement('li');
-        const courseTextElement = course.url ? document.createElement('a') : document.createElement('span');
-        courseTextElement.textContent = course.title;
-        if (course.url) {
-          courseTextElement.href = course.url;
-          courseTextElement.target = '_blank';
-          courseTextElement.rel = 'noopener noreferrer';
-          const icon = document.createElement('i');
-          icon.className = 'fas fa-external-link-alt fa-xs ms-1 text-muted';
-          courseTextElement.appendChild(icon);
-        }
-        listItem.appendChild(courseTextElement);
+        listItem.appendChild(createCourseElement(course));
 
         if (course.details && course.details.length > 0) {
           const nestedList = document.createElement('ul');
           nestedList.className = 'nested-list';
           course.details.forEach(detail => {
             const nestedItem = document.createElement('li');
-            const detailTextElement = detail.url ? document.createElement('a') : document.createElement('span');
-            detailTextElement.textContent = detail.title;
-            if (detail.url) {
-              detailTextElement.href = detail.url;
-              detailTextElement.target = '_blank';
-              detailTextElement.rel = 'noopener noreferrer';
-              const icon = document.createElement('i');
-              icon.className = 'fas fa-external-link-alt fa-xs ms-1 text-muted';
-              detailTextElement.appendChild(icon);
-            }
-            nestedItem.appendChild(detailTextElement);
+            nestedItem.appendChild(createCourseElement(detail));
             nestedList.appendChild(nestedItem);
           });
           listItem.appendChild(nestedList);
         }
+
+        // Hide items beyond the initial visible limit
+        if (index >= INITIAL_ITEMS_VISIBLE) {
+          listItem.style.display = 'none';
+        }
+
         coursesList.appendChild(listItem);
       });
       coursesContainer.replaceChildren(coursesList);
+
+      // Add "Show More/Less" button if needed
+      if (courses.length > INITIAL_ITEMS_VISIBLE) {
+        const toggleButton = document.createElement('button');
+        toggleButton.className = 'btn btn-outline-primary btn-sm mt-3';
+        toggleButton.textContent = 'Show More';
+        let isShowingAll = false;
+
+        toggleButton.addEventListener('click', () => {
+          isShowingAll = !isShowingAll;
+          const listItems = Array.from(coursesList.children);
+          for (let i = INITIAL_ITEMS_VISIBLE; i < listItems.length; i++) {
+            listItems[i].style.display = isShowingAll ? 'list-item' : 'none';
+          }
+          toggleButton.textContent = isShowingAll ? 'Show Less' : 'Show More';
+        });
+
+        coursesToggleContainer.appendChild(toggleButton);
+      }
     };
 
     showLoading();
