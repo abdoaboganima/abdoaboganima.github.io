@@ -19,6 +19,7 @@ body[data-theme="dark"] {
   --bs-body-color: #ced4da; /* Dark mode main body text color */
   --card-bg: #1e1e1e; 
   --card-border: #343a40;
+  --bs-secondary-color: #adb5bd; /* Muted text color for dark mode */
   --shadow-color: rgba(0, 0, 0, 0.2);
   --bs-link-color: #69b1ff;
   --footer-text-color: #adb5bd; /* Muted text for dark mode */
