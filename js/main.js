@@ -160,4 +160,25 @@ document.addEventListener('DOMContentLoaded', () => {
   loadCourses();
   setupScrollAnimations();
   setFooterYear();
+
+  // --- Scroll to Top Button Logic ---
+  const scrollTopBtn = document.getElementById("scrollTopBtn");
+  if (scrollTopBtn) {
+    // When the user scrolls down 100px from the top of the document, show the button
+    window.onscroll = function() {
+      if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+        scrollTopBtn.classList.add("show");
+      } else {
+        scrollTopBtn.classList.remove("show");
+      }
+    };
+
+    // When the user clicks on the button, scroll to the top of the document
+    scrollTopBtn.addEventListener("click", function() {
+      window.scrollTo({
+        top: 0,
+        behavior: "smooth"
+      });
+    });
+  }
 });
