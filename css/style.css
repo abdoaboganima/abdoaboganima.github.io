@@ -119,9 +119,6 @@ ul {
   padding: 0.4em 0.7em;
 }
 
-#theme-toggle {
-  /* Removed as it's now a switch */
-}
 
 #theme-toggle-container {
   position: absolute; /* Position the switch container */
