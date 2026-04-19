@@ -32,92 +32,97 @@
 <body>
   <div class="container position-relative">
     <header class="mb-4">
-      <div class="form-check form-switch" id="theme-toggle-container">
-        <input class="form-check-input" type="checkbox" id="theme-toggle-switch">
-        <label class="form-check-label" for="theme-toggle-switch" title="Toggle theme">
-          <i class="fas fa-moon"></i>
-        </label>
+      <div id="top-controls">
+        <div class="form-check form-switch" id="theme-toggle-container">
+          <input class="form-check-input" type="checkbox" id="theme-toggle-switch">
+          <label class="form-check-label" for="theme-toggle-switch" title="Toggle theme">
+            <i class="fas fa-moon"></i>
+          </label>
+        </div>
+        <div id="language-switcher">
+          <button class="lang-btn active" id="btn-en">EN</button> | <button class="lang-btn" id="btn-de">DE</button>
+        </div>
       </div>
       <h1 class="text-center">Abdelrahman Aboghanima</h1>
       <div class="text-center">
         <p><i class="fas fa-fw fa-phone icon" aria-hidden="true"></i><a href="tel:+201556757667">(+20) 1556757667</a> | <i class="fas fa-fw fa-envelope icon" aria-hidden="true"></i><a href="mailto:abdo.aboganima@gmail.com">abdo.aboganima@gmail.com</a></p>
-        <p><i class="fas fa-fw fa-map-marker-alt icon" aria-hidden="true"></i>Ingolstadt, Bayern, Germany</p>
+        <p><i class="fas fa-fw fa-map-marker-alt icon" aria-hidden="true"></i><span data-i18n="location">Ingolstadt, Bayern, Germany</span></p>
       </div>
     </header>
 
     <section class="section">
-      <h2><i class="fas fa-fw fa-user icon" aria-hidden="true"></i>Summary</h2>
+      <h2><i class="fas fa-fw fa-user icon" aria-hidden="true"></i><span data-i18n="summary-title">Summary</span></h2>
       <div class="card">
-        <p class="mb-0">Computers and Systems Engineer with experience in Embedded Systems Software Development. Skilled in Python, C++, and C. Ranked second in university class with overall distinction grade.</p>
+        <p class="mb-0" data-i18n="summary-text">Computers and Systems Engineer with experience in Embedded Systems Software Development. Skilled in Python, C++, and C. Ranked second in university class with overall distinction grade.</p>
       </div>
     </section>
 
     <section class="section">
-      <h2><i class="fas fa-fw fa-briefcase icon" aria-hidden="true"></i>Current Position</h2>
+      <h2><i class="fas fa-fw fa-briefcase icon" aria-hidden="true"></i><span data-i18n="current-position-title">Current Position</span></h2>
       <div class="card">
         <div class="d-flex align-items-start mb-3">
           <img src="images/valeo-logo.png" alt="Valeo Logo" class="item-logo me-3">
           <div>
-            <h5>Embedded Software Engineer <span class="text-muted">(Nov 2022 – Present)</span></h5>
-            <p class="mb-0">Valeo Egypt, Cairo, Egypt</p>
+            <h5><span data-i18n="job-title">Embedded Software Engineer</span> <span class="text-muted" data-i18n="job-period">(Nov 2022 – Present)</span></h5>
+            <p class="mb-0" data-i18n="job-location">Valeo Egypt, Cairo, Egypt</p>
           </div>
         </div>
         <ul>
-          <li>Developing Python tools for facilitating development and testing processes.</li>
-          <li>Creating and maintaining traceability matrices.</li>
-          <li>Implementing and refactoring SIMULINK models for code generation.</li>
-          <li>Implementing and designing Model in Loop (MiL) & Software in Loop (SiL) test cases for models.</li>
-          <li>Performing integration for software components.</li>
-          <li>Peer-reviewing work products (Design Documents, Code, Test documents).</li>
-          <li>Worked on High-Voltage Heaters for different OEMs (PSA, RSA, JLR, Stellantis, GWM).</li>
-          <li>Developing Python Scripts for CI/CD pipelines.</li>
-          <li>Experienced with Software guidelines (MISRA-C rules, Corporate rules) and static/runtime analysis tools (e.g., PolySpace).</li>
-          <li>Analyzing and Tracking Customers’ requirements using requirements management tools (e.g., Reqtify).</li>
-          <li>Automating test cases using Robot Framework.</li>
-          <li>Performing Manual and Automatic Integration Testing’s Planning and executing.</li>
-          <li>Using Davinci Configurator to configure the DCM module of the Communication Stack.</li>
+          <li data-i18n="job-task-1">Developing Python tools for facilitating development and testing processes.</li>
+          <li data-i18n="job-task-2">Creating and maintaining traceability matrices.</li>
+          <li data-i18n="job-task-3">Implementing and refactoring SIMULINK models for code generation.</li>
+          <li data-i18n="job-task-4">Implementing and designing Model in Loop (MiL) & Software in Loop (SiL) test cases for models.</li>
+          <li data-i18n="job-task-5">Performing integration for software components.</li>
+          <li data-i18n="job-task-6">Peer-reviewing work products (Design Documents, Code, Test documents).</li>
+          <li data-i18n="job-task-7">Worked on High-Voltage Heaters for different OEMs (PSA, RSA, JLR, Stellantis, GWM).</li>
+          <li data-i18n="job-task-8">Developing Python Scripts for CI/CD pipelines.</li>
+          <li data-i18n="job-task-9">Experienced with Software guidelines (MISRA-C rules, Corporate rules) and static/runtime analysis tools (e.g., PolySpace).</li>
+          <li data-i18n="job-task-10">Analyzing and Tracking Customers’ requirements using requirements management tools (e.g., Reqtify).</li>
+          <li data-i18n="job-task-11">Automating test cases using Robot Framework.</li>
+          <li data-i18n="job-task-12">Performing Manual and Automatic Integration Testing’s Planning and executing.</li>
+          <li data-i18n="job-task-13">Using Davinci Configurator to configure the DCM module of the Communication Stack.</li>
         </ul>
       </div>
     </section>
 
     <section class="section">
-      <h2><i class="fas fa-fw fa-graduation-cap icon" aria-hidden="true"></i>Education</h2>
+      <h2><i class="fas fa-fw fa-graduation-cap icon" aria-hidden="true"></i><span data-i18n="education-title">Education</span></h2>
       <div class="card">
         <div class="d-flex align-items-start">
           <img src="images/THI.png" alt="Technische Hochschule Ingolstadt Logo" class="item-logo me-3">
           <div>
-            <h5>M. Sc. in Sociotechnical Cybersecurity</h5>
-            <p class="mb-0">Technische Hochschule Ingolstadt (THI) <span class="text-muted">(March 2026 – Present)</span></p>
+            <h5 data-i18n="edu-thi-degree">M. Sc. in Sociotechnical Cybersecurity</h5>
+            <p class="mb-0">Technische Hochschule Ingolstadt (THI) <span class="text-muted" data-i18n="edu-thi-period">(March 2026 – Present)</span></p>
           </div>
         </div>
         <hr class="my-3">
         <div class="d-flex align-items-start">
           <img src="images/minia-university-logo.png" alt="Minya University Logo" class="item-logo me-3">
           <div>
-            <h5>B. Sc. in Computers and Systems Engineering</h5>
-            <p>Minya University <span class="text-muted">(Sep 2017 – Jul 2022)</span></p>
-            <p class="mb-0">Cumulative Grade: Excellent with Honor (GPA: 3.7/4.0, German: 1.79)</p>
+            <h5 data-i18n="edu-minia-degree">B. Sc. in Computers and Systems Engineering</h5>
+            <p>Minya University <span class="text-muted" data-i18n="edu-minia-period">(Sep 2017 – Jul 2022)</span></p>
+            <p class="mb-0" data-i18n="edu-minia-grade">Cumulative Grade: Excellent with Honor (GPA: 3.7/4.0, German: 1.79)</p>
           </div>
         </div>
       </div>
     </section>
 
     <section class="section">
-      <h2><i class="fas fa-fw fa-chalkboard-teacher icon" aria-hidden="true"></i>Training</h2>
+      <h2><i class="fas fa-fw fa-chalkboard-teacher icon" aria-hidden="true"></i><span data-i18n="training-title">Training</span></h2>
       <div class="card">
         <ul>
-          <li>RTOS and Automotive Technology, 2022, National Telecommunication Institute (NTI)</li>
-          <li>Embedded Systems Training, 2021, Information Technology Institute (ITI)</li>
+          <li data-i18n="training-1">RTOS and Automotive Technology, 2022, National Telecommunication Institute (NTI)</li>
+          <li data-i18n="training-2">Embedded Systems Training, 2021, Information Technology Institute (ITI)</li>
         </ul>
       </div>
     </section>
 
     <section class="section">
-      <h2><i class="fas fa-fw fa-cogs icon" aria-hidden="true"></i>Technical Skills</h2>
+      <h2><i class="fas fa-fw fa-cogs icon" aria-hidden="true"></i><span data-i18n="skills-title">Technical Skills</span></h2>
       <div class="card">
         <div class="row">
           <div class="col-md-6 mb-3">
-            <h5>Languages</h5>
+            <h5 data-i18n="skills-languages">Languages</h5>
             <div>
               <span class="badge bg-primary me-1 mb-1">C/C++</span>
               <span class="badge bg-primary me-1 mb-1">Rust</span>
@@ -127,7 +132,7 @@
             </div>
           </div>
           <div class="col-md-6 mb-3">
-            <h5>Platforms</h5>
+            <h5 data-i18n="skills-platforms">Platforms</h5>
             <div>
               <span class="badge bg-primary me-1 mb-1">AVR (ATMega32)</span>
               <span class="badge bg-primary me-1 mb-1">ARM (TM4C123GXL)</span>
@@ -135,7 +140,7 @@
             </div>
           </div>
           <div class="col-md-6 mb-3">
-            <h5>Protocols</h5>
+            <h5 data-i18n="skills-protocols">Protocols</h5>
             <div>
               <span class="badge bg-primary me-1 mb-1">UART</span>
               <span class="badge bg-primary me-1 mb-1">SPI</span>
@@ -146,7 +151,7 @@
             </div>
           </div>
           <div class="col-md-6 mb-3">
-            <h5>Peripherals</h5>
+            <h5 data-i18n="skills-peripherals">Peripherals</h5>
             <div>
               <span class="badge bg-primary me-1 mb-1">GPIO</span>
               <span class="badge bg-primary me-1 mb-1">ADC</span>
@@ -156,7 +161,7 @@
             </div>
           </div>
           <div class="col-md-6 mb-3">
-            <h5>Data Structures &amp; Algorithms</h5>
+            <h5 data-i18n="skills-ds-algo">Data Structures &amp; Algorithms</h5>
             <div>
               <span class="badge bg-primary me-1 mb-1">Linked Lists</span>
               <span class="badge bg-primary me-1 mb-1">Stack/Queue</span>
@@ -166,66 +171,66 @@
             </div>
           </div>
           <div class="col-md-6 mb-3">
-            <h5>Real-Time Operating Systems</h5>
+            <h5 data-i18n="skills-rtos">Real-Time Operating Systems</h5>
             <div>
               <span class="badge bg-primary me-1 mb-1">FreeRTOS</span>
             </div>
-            <small class="text-muted">Task management, scheduling, inter-task communication</small>
+            <small class="text-muted" data-i18n="rtos-desc">Task management, scheduling, inter-task communication</small>
           </div>
         </div>
         <hr>
-        <h5>Tools</h5>
+        <h5 data-i18n="skills-tools">Tools</h5>
         <p class="mb-2">
-          <strong>Development:</strong> <span class="badge bg-secondary me-1 mb-1">Make</span><span class="badge bg-secondary me-1 mb-1">CMake</span><span class="badge bg-secondary me-1 mb-1">Atmel Studio</span><span class="badge bg-secondary me-1 mb-1">Eclipse</span><span class="badge bg-secondary me-1 mb-1">IAR Studio</span><span class="badge bg-secondary me-1 mb-1">Emacs</span><span class="badge bg-secondary me-1 mb-1">Vim</span>
+          <strong data-i18n="tools-dev">Development:</strong> <span class="badge bg-secondary me-1 mb-1">Make</span><span class="badge bg-secondary me-1 mb-1">CMake</span><span class="badge bg-secondary me-1 mb-1">Atmel Studio</span><span class="badge bg-secondary me-1 mb-1">Eclipse</span><span class="badge bg-secondary me-1 mb-1">IAR Studio</span><span class="badge bg-secondary me-1 mb-1">Emacs</span><span class="badge bg-secondary me-1 mb-1">Vim</span>
         </p>
         <p class="mb-2">
-          <strong>Debugging &amp; Testing:</strong>
+          <strong data-i18n="tools-test">Debugging &amp; Testing:</strong>
           <span class="badge bg-secondary me-1 mb-1">GDB</span><span class="badge bg-secondary me-1 mb-1">Valgrind</span><span class="badge bg-secondary me-1 mb-1">SIMULINK</span><span class="badge bg-secondary me-1 mb-1">CANoe</span><span class="badge bg-secondary me-1 mb-1">CAPL</span><span class="badge bg-secondary me-1 mb-1">vTESTstudio</span><span class="badge bg-secondary me-1 mb-1">Trace32</span><span class="badge bg-secondary me-1 mb-1">J-Link</span><span class="badge bg-secondary me-1 mb-1">Robot Framework</span>
         </p>
         <p class="mb-2">
-          <strong>CI/CD &amp; Automation:</strong>
+          <strong data-i18n="tools-cicd">CI/CD &amp; Automation:</strong>
           <span class="badge bg-secondary me-1 mb-1">Jenkins</span><span class="badge bg-secondary me-1 mb-1">Docker</span><span class="badge bg-secondary me-1 mb-1">Ansible</span><span class="badge bg-secondary me-1 mb-1">Nexus</span>
         </p>
         <p class="mb-2">
-          <strong>Version Control &amp; Project Management:</strong> <span class="badge bg-secondary me-1 mb-1">IBM Doors</span><span class="badge bg-secondary me-1 mb-1">Git</span><span class="badge bg-secondary me-1 mb-1">GitHub</span><span class="badge bg-secondary me-1 mb-1">GitLab</span><span class="badge bg-secondary me-1 mb-1">Jira</span>
+          <strong data-i18n="tools-vc">Version Control &amp; Project Management:</strong> <span class="badge bg-secondary me-1 mb-1">IBM Doors</span><span class="badge bg-secondary me-1 mb-1">Git</span><span class="badge bg-secondary me-1 mb-1">GitHub</span><span class="badge bg-secondary me-1 mb-1">GitLab</span><span class="badge bg-secondary me-1 mb-1">Jira</span>
         </p>
         <p class="mb-2">
-          <strong>Documentation:</strong>
+          <strong data-i18n="tools-doc">Documentation:</strong>
           <span class="badge bg-secondary me-1 mb-1">Doxygen</span><span class="badge bg-secondary me-1 mb-1">LaTeX</span>
         </p>
         <hr>
-        <h5>Domain Knowledge &amp; Methodologies</h5>
+        <h5 data-i18n="skills-domain">Domain Knowledge &amp; Methodologies</h5>
         <ul>
-          <li>Strong with the C build process, software development life cycle (SDLC) and Automotive SPICE standards for embedded systems development.</li>
-          <li>Good understanding of Buildroot, Yocto, and Linux system programming.</li>
+          <li data-i18n="domain-1">Strong with the C build process, software development life cycle (SDLC) and Automotive SPICE standards for embedded systems development.</li>
+          <li data-i18n="domain-2">Good understanding of Buildroot, Yocto, and Linux system programming.</li>
         </ul>
       </div>
     </section>
 
     <section class="section">
-      <h2><i class="fas fa-fw fa-tools icon" aria-hidden="true"></i>Projects</h2>
+      <h2><i class="fas fa-fw fa-tools icon" aria-hidden="true"></i><span data-i18n="projects-title">Projects</span></h2>
       <div class="card">
         <ul>
-          <li><strong>Drivers' Implementation for MCAL/HAL:</strong> <a href="https://github.com/abdoaboganima/avr" target="_blank" rel="noopener noreferrer">GitHub Link <i class="fas fa-external-link-alt fa-xs ms-1 text-muted"></i></a></li>
-          <li><strong>CLI-TypingClub:</strong> A command-line interface typing tutor to improve typing speed and accuracy. <a href="https://github.com/abdoaboganima/CLI-TypingClub" target="_blank" rel="noopener noreferrer">GitHub Link <i class="fas fa-external-link-alt fa-xs ms-1 text-muted"></i></a></li>
-          <li><strong>Line Follower Robot:</strong> Based on ATmega32, IR sensors, L293 driver</li>
+          <li><strong data-i18n="project-1-title">Drivers' Implementation for MCAL/HAL:</strong> <a href="https://github.com/abdoaboganima/avr" target="_blank" rel="noopener noreferrer"><span data-i18n="github-link">GitHub Link</span> <i class="fas fa-external-link-alt fa-xs ms-1 text-muted"></i></a></li>
+          <li><strong data-i18n="project-2-title">CLI-TypingClub:</strong> <span data-i18n="project-2-desc">A command-line interface typing tutor to improve typing speed and accuracy.</span> <a href="https://github.com/abdoaboganima/CLI-TypingClub" target="_blank" rel="noopener noreferrer"><span data-i18n="github-link">GitHub Link</span> <i class="fas fa-external-link-alt fa-xs ms-1 text-muted"></i></a></li>
+          <li><strong data-i18n="project-3-title">Line Follower Robot:</strong> <span data-i18n="project-3-desc">Based on ATmega32, IR sensors, L293 driver</span></li>
         </ul>
       </div>
     </section>
 
     <section class="section">
-      <h2><i class="fas fa-fw fa-globe icon" aria-hidden="true"></i>Online Projects</h2>
+      <h2><i class="fas fa-fw fa-globe icon" aria-hidden="true"></i><span data-i18n="online-projects-title">Online Projects</span></h2>
       <div class="card">
         <ul>
-          <li><a href="https://www.coursera.org/account/accomplishments/certificate/FYVL8XCT3CX6" target="_blank" rel="noopener noreferrer">Create User Directory and Files with Linux Commands <i class="fas fa-external-link-alt fa-xs ms-1 text-muted"></i></a></li>
-          <li><a href="https://www.coursera.org/account/accomplishments/certificate/8XHC4FBEPKKU" target="_blank" rel="noopener noreferrer">Introduction to Pointers and Memory Management in C/C++ <i class="fas fa-external-link-alt fa-xs ms-1 text-muted"></i></a></li>
-          <li><a href="https://www.coursera.org/account/accomplishments/certificate/27ACEUCSDNKH" target="_blank" rel="noopener noreferrer">Getting Started with Cascading Style Sheet <i class="fas fa-external-link-alt fa-xs ms-1 text-muted"></i></a></li>
+          <li><a href="https://www.coursera.org/account/accomplishments/certificate/FYVL8XCT3CX6" target="_blank" rel="noopener noreferrer"><span data-i18n="online-project-1">Create User Directory and Files with Linux Commands</span> <i class="fas fa-external-link-alt fa-xs ms-1 text-muted"></i></a></li>
+          <li><a href="https://www.coursera.org/account/accomplishments/certificate/8XHC4FBEPKKU" target="_blank" rel="noopener noreferrer"><span data-i18n="online-project-2">Introduction to Pointers and Memory Management in C/C++</span> <i class="fas fa-external-link-alt fa-xs ms-1 text-muted"></i></a></li>
+          <li><a href="https://www.coursera.org/account/accomplishments/certificate/27ACEUCSDNKH" target="_blank" rel="noopener noreferrer"><span data-i18n="online-project-3">Getting Started with Cascading Style Sheet</span> <i class="fas fa-external-link-alt fa-xs ms-1 text-muted"></i></a></li>
         </ul>
       </div>
     </section>
 
     <section class="section">
-      <h2><i class="fas fa-fw fa-star icon" aria-hidden="true"></i>Courses & Certifications</h2>
+      <h2><i class="fas fa-fw fa-star icon" aria-hidden="true"></i><span data-i18n="courses-title">Courses & Certifications</span></h2>
       <div class="card">
         <div id="courses-container">
           <!-- Course content will be loaded here by js/main.js -->
@@ -237,53 +242,53 @@
     </section>
 
     <section class="section">
-      <h2><i class="fas fa-fw fa-language icon" aria-hidden="true"></i>Languages</h2>
+      <h2><i class="fas fa-fw fa-language icon" aria-hidden="true"></i><span data-i18n="langs-title">Languages</span></h2>
       <div class="card">
         <ul>
-          <li>Arabic – Native</li>
-          <li>English – Full Professional</li>
-          <li>German – Intermediate (B1)</li>
+          <li data-i18n="lang-1">Arabic – Native</li>
+          <li data-i18n="lang-2">English – Full Professional</li>
+          <li data-i18n="lang-3">German – Intermediate (B1)</li>
         </ul>
       </div>
     </section>
 
     <section class="section">
-      <h2><i class="fas fa-fw fa-user-check icon" aria-hidden="true"></i>Personal Skills</h2>
+      <h2><i class="fas fa-fw fa-user-check icon" aria-hidden="true"></i><span data-i18n="pers-skills-title">Personal Skills</span></h2>
       <div class="card">
         <ul>
-          <li>Self-discipline</li>
-          <li>Team player</li>
-          <li>Leadership</li>
-          <li>Good communicator</li>
-          <li>Problem solving</li>
+          <li data-i18n="skill-1">Self-discipline</li>
+          <li data-i18n="skill-2">Team player</li>
+          <li data-i18n="skill-3">Leadership</li>
+          <li data-i18n="skill-4">Good communicator</li>
+          <li data-i18n="skill-5">Problem solving</li>
         </ul>
       </div>
     </section>
 
     <section class="section">
-      <h2><i class="fas fa-fw fa-id-card icon" aria-hidden="true"></i>Personal Data</h2>
+      <h2><i class="fas fa-fw fa-id-card icon" aria-hidden="true"></i><span data-i18n="pers-data-title">Personal Data</span></h2>
       <div class="card">
         <ul>
-          <li>Date of Birth: 25/10/1999</li>
-          <li>Military Status: Exempted</li>
+          <li data-i18n="birth-date">Date of Birth: 25/10/1999</li>
+          <li data-i18n="military-status">Military Status: Exempted</li>
         </ul>
       </div>
     </section>
 
     <section class="section">
-      <h2><i class="fas fa-fw fa-link icon" aria-hidden="true"></i>Links</h2>
+      <h2><i class="fas fa-fw fa-link icon" aria-hidden="true"></i><span data-i18n="links-title">Links</span></h2>
       <div class="card">
         <ul class="list-unstyled mb-0">
-          <li><a href="https://www.linkedin.com/in/abdoaboganima" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-linkedin fa-fw me-2"></i>LinkedIn Profile <i class="fas fa-external-link-alt fa-xs ms-1 text-muted"></i></a></li>
-          <li class="mt-2"><a href="https://github.com/abdoaboganima" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-github fa-fw me-2"></i>GitHub Profile <i class="fas fa-external-link-alt fa-xs ms-1 text-muted"></i></a></li>
-          <li class="mt-2"><a href="https://stackoverflow.com/users/10851804/nand" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-stack-overflow fa-fw me-2"></i>Stack Overflow Profile <i class="fas fa-external-link-alt fa-xs ms-1 text-muted"></i></a></li>
-          <li class="mt-2"><a href="https://www.xing.com/profile/Abdelrahman_Aboghanima/" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-xing fa-fw me-2"></i>XING Profile <i class="fas fa-external-link-alt fa-xs ms-1 text-muted"></i></a></li>
+          <li><a href="https://www.linkedin.com/in/abdoaboganima" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-linkedin fa-fw me-2"></i><span data-i18n="link-linkedin">LinkedIn Profile</span> <i class="fas fa-external-link-alt fa-xs ms-1 text-muted"></i></a></li>
+          <li class="mt-2"><a href="https://github.com/abdoaboganima" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-github fa-fw me-2"></i><span data-i18n="link-github">GitHub Profile</span> <i class="fas fa-external-link-alt fa-xs ms-1 text-muted"></i></a></li>
+          <li class="mt-2"><a href="https://stackoverflow.com/users/10851804/nand" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-stack-overflow fa-fw me-2"></i><span data-i18n="link-stack">Stack Overflow Profile</span> <i class="fas fa-external-link-alt fa-xs ms-1 text-muted"></i></a></li>
+          <li class="mt-2"><a href="https://www.xing.com/profile/Abdelrahman_Aboghanima/" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-xing fa-fw me-2"></i><span data-i18n="link-xing">XING Profile</span> <i class="fas fa-external-link-alt fa-xs ms-1 text-muted"></i></a></li>
         </ul>
       </div>
     </section>
   </div>
   <footer class="text-center py-4">
-    <small>&copy; <span id="current-year"></span> Abdelrahman Aboghanima. All Rights Reserved.</small>
+    <small>&copy; <span id="current-year"></span> Abdelrahman Aboghanima. <span data-i18n="footer-rights">All Rights Reserved.</span></small>
   </footer>
 
   <!-- Scroll to Top Button -->

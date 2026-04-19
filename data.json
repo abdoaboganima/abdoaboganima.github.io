@@ -4,15 +4,15 @@
     { "title": "Docker Training Course", "url": "https://learn.kodekloud.com/user/certificate/fc167457-5d06-465e-96c0-24e3f4736e13" },
     { "title": "Open Source for Beginners", "url": "https://learn.kodekloud.com/user/certificate/06177ab3-6462-49cf-9aa6-a67fbc751c5a" },
     { "title": "Learn Ansible Basics", "url": "https://learn.kodekloud.com/user/certificate/c7fdfd5c-210c-4128-850c-bb470980c93e" },
-    { "title": "ISTQB CTFL V4: International Software Testing Qualifications Board Certified Tester", "url": "http://scr.istqb.org/?name=&number=231101018" },
-    { "title": "Overview of Automotive SPICE", "url": "https://www.coursera.org/account/accomplishments/certificate/0EC4A5ORNEKK" },
-    { "title": "Introduction to DevOps", "url": "https://www.coursera.org/account/accomplishments/certificate/W9A79QAQWTAU" },
-    { "title": "Introduction to Test and Behavior Driven Development", "url": "https://www.coursera.org/account/accomplishments/certificate/DXM25A5N4KWY" },
+    { "title": "ISTQB CTFL V4: International Software Testing Qualifications Board Certified Tester", "title_de": "ISTQB CTFL V4: Zertifizierter Tester des International Software Testing Qualifications Board", "url": "http://scr.istqb.org/?name=&number=231101018" },
+    { "title": "Overview of Automotive SPICE", "title_de": "Überblick über Automotive SPICE", "url": "https://www.coursera.org/account/accomplishments/certificate/0EC4A5ORNEKK" },
+    { "title": "Introduction to DevOps", "title_de": "Einführung in DevOps", "url": "https://www.coursera.org/account/accomplishments/certificate/W9A79QAQWTAU" },
+    { "title": "Introduction to Test and Behavior Driven Development", "title_de": "Einführung in test- und verhaltensgesteuerte Entwicklung", "url": "https://www.coursera.org/account/accomplishments/certificate/DXM25A5N4KWY" },
     {
-      "title": "Introduction to Programming in C Specialization",
+      "title": "Introduction to Programming in C Specialization", "title_de": "Spezialisierung: Einführung in die Programmierung in C",
       "url": "https://www.coursera.org/account/accomplishments/specialization/certificate/5AHGQBBNXTD7",
       "details": [
-        { "title": "Programming Fundamentals", "url": "https://www.coursera.org/account/accomplishments/certificate/HWTD2YPJW637" },
+        { "title": "Programming Fundamentals", "title_de": "Grundlagen der Programmierung", "url": "https://www.coursera.org/account/accomplishments/certificate/HWTD2YPJW637" },
         { "title": "Writing, Running, and Fixing Code in C", "url": "https://www.coursera.org/account/accomplishments/certificate/2UAEMU4C3DBJ" },
         { "title": "Pointers, Arrays, and Recursion", "url": "https://www.coursera.org/account/accomplishments/certificate/JUGUD6K85HJT" },
         { "title": "Interacting with the System and Managing Memory", "url": "https://www.coursera.org/account/accomplishments/certificate/8QQJ38DNP69Y" }
